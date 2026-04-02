@@ -8,9 +8,12 @@ let strtbtn = document.querySelector(".hide , button");
 let startpage = document.querySelector(".hide");
 let mainapp = document.querySelector(".container");
 
+let click  = document.querySelector("#myaudio");
+
 
 
 button.addEventListener("click",function(){
+    click.play();
     let tasktext = input.value;
 
     let li = document.createElement("li");
@@ -28,6 +31,7 @@ button.addEventListener("click",function(){
 })
 
 list.addEventListener("click", function (e) {
+    click.play();
     if (e.target.tagName === "BUTTON") {
         e.target.parentElement.remove();
     }
@@ -35,6 +39,7 @@ list.addEventListener("click", function (e) {
 
 
 strtbtn.addEventListener("click", function(){
+    click.play();
     startpage.style.display = "none";
     mainapp.style.display = "flex";
      document.body.style.backgroundColor = "#CEB5A7";
