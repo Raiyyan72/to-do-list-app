@@ -13,6 +13,7 @@ let click  = document.querySelector("#myaudio");
 
 
 button.addEventListener("click",function(){
+    click.currentTime = 0;
     click.play();
     let tasktext = input.value;
 
@@ -31,6 +32,7 @@ button.addEventListener("click",function(){
 })
 
 list.addEventListener("click", function (e) {
+       click.currentTime = 0;
     click.play();
     if (e.target.tagName === "BUTTON") {
         e.target.parentElement.remove();
@@ -39,6 +41,7 @@ list.addEventListener("click", function (e) {
 
 
 strtbtn.addEventListener("click", function(){
+       click.currentTime = 0;
     click.play();
     startpage.style.display = "none";
     mainapp.style.display = "flex";
