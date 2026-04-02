@@ -8,8 +8,9 @@ let strtbtn = document.querySelector(".hide , button");
 let startpage = document.querySelector(".hide");
 let mainapp = document.querySelector(".container");
 
-let click  = document.querySelector("#myaudio");
+// add audio
 
+let click  = document.querySelector("#myaudio");
 
 
 button.addEventListener("click",function(){
