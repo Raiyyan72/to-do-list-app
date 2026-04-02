@@ -11,6 +11,19 @@ let mainapp = document.querySelector(".container");
 let click  = document.querySelector("#myaudio");
 
 
+let completebtn = document.createElement("button");
+completebtn.innerText = "Complete";
+completebtn.classList.add = ("complete-btn");
+li.appendChild(completebtn);
+
+list.addEventListener("click",function(e){
+     click.currentTime = 0;
+    click.play();
+    if (e.target.classList.contains("complete-btn")) {
+        e.target.parentElement.classList.toggle("completed");
+    }
+})
+
 
 button.addEventListener("click",function(){
     click.currentTime = 0;
